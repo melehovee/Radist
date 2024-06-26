@@ -1,112 +1,114 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 @font-face {
-    font-family: "RussoOne";
-    src: url("fonts/RussoOne-Regular.ttf") format("truetype");
-    font-weight: normal;
-    font-style: normal;
+  font-family: "RussoOne";
+  src: url("fonts/RussoOne-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 @font-face {
-    font-family: "Caveat";
-    src: url("fonts/Caveat-Regular.ttf") format("truetype");
-    font-weight: normal;
-    font-style: normal;
+  font-family: "Caveat";
+  src: url("fonts/Caveat-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
-
 
 body {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 a {
-    text-decoration: none;
-    color: #000;
+  text-decoration: none;
+  color: #000;
 }
 .container {
-    /* width: 1200px; */
-    margin: 0 auto;
+  /* width: 1200px; */
+  margin: 0 auto;
 }
 .header {
-    padding: 32px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    background: linear-gradient(#ccc, #fff);
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+  padding: 32px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(#ccc, #fff);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 .logo {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 .title {
-    font-family: "RussoOne", sans-serif;
-    font-size: 48px;
-    letter-spacing: 20px;
-    text-transform: uppercase
+  font-family: "RussoOne", sans-serif;
+  font-size: 48px;
+  letter-spacing: 20px;
+  text-transform: uppercase;
 }
 .header-link {
-    text-transform: uppercase;
-    font-weight:bold;
+  text-transform: uppercase;
+  font-weight: bold;
 }
-.header-link:hover{
-    color: rgb(4, 89, 158);
+.header-link:hover {
+  color: rgb(4, 89, 158);
 }
 .header-link:not(:last-child)::after {
-    content: " |";
+  content: " |";
 }
 .main {
-    margin-top: 200px;
-    padding: 0 4%;
-    min-height: 100vh;
-} 
-
-
-
-
-
-
-
-
+  margin-top: 200px;
+  padding: 0 4%;
+  min-height: 100vh;
+}
+.main-title {
+  text-align: center;
+  font-family: "RussoOne";
+  font-size: 36px;
+  letter-spacing: 5px;
+  margin-bottom: 36px;
+}
 
 .footer {
-    padding: 32px;
-    display: flex;
-    justify-content: space-around;
-    background: linear-gradient(#fff, #ccc);
-    gap: 8px;
+  padding: 32px;
+  display: flex;
+  justify-content: space-around;
+  background: linear-gradient(#fff, #ccc);
+  gap: 8px;
 }
 .footer-title {
-    text-transform: uppercase;
-    font-weight:bold;
-    margin-bottom: 12px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 12px;
 }
 .footer-block {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 .footer-block img {
-    vertical-align: bottom;
-    margin-right: 5px;
+  vertical-align: bottom;
+  margin-right: 5px;
 }
 
-
 @media screen and (max-width: 767px) {
-    .header, .footer {
-        flex-direction: column;
-        gap: 20px;
-        padding: 18px;
-    }
-    .title {
-        font-size: 36px;
-    }
-    .header-link {
-        font-size: 14px;
-    }
+  .header,
+  .footer {
+    flex-direction: column;
+    gap: 20px;
+    padding: 18px;
+    align-items: center;
+  }
+  .footer-block {
+    align-items: center;
+  }
+  .title {
+    font-size: 36px;
+  }
+  .header-link {
+    font-size: 14px;
+  }
 }
