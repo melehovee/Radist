@@ -69,5 +69,6 @@
     }
     .news-text_highlight {
         font-size: 22px;
+        font-weight: normal;
     }
 }
