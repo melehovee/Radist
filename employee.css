@@ -27,6 +27,12 @@
     max-width: 90%;
 }
 
+@media screen and (max-width: 1024px) {
+    .employee {
+        grid-template-columns: 1fr 1fr;
+    }
+  }
+
 @media screen and (max-width: 767px) {
     .employee {
         grid-template-columns: 1fr;

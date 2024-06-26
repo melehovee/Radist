@@ -45,12 +45,15 @@ th {
   font-weight: bold;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1024px) {
   .history {
     -moz-column-count: 1;
     column-count: 1;
     width: 100%;
   }
+}
+
+@media screen and (max-width: 767px) {
   .history-title {
     font-size: 22px;
   }

@@ -41,22 +41,25 @@
     text-decoration:underline;
 }
 
-
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1024px) {
     .news {
         padding: 2%;
         width: 100%;
         margin-bottom: 36px;
+        text-align: center;
     }
     .news-item {
         padding: 32px 0;
         flex-direction: column;
     }
-    .news-item:first-child {
-        padding-top: 0;
-    }
     .news-item:nth-child(even) {
         flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .news-item:first-child {
+        padding-top: 0;
     }
     .news-img {
         width: 100%;
