@@ -46,10 +46,14 @@
     .news {
         padding: 2%;
         width: 100%;
+        margin-bottom: 36px;
     }
     .news-item {
         padding: 32px 0;
         flex-direction: column;
+    }
+    .news-item:first-child {
+        padding-top: 0;
     }
     .news-item:nth-child(even) {
         flex-direction: column;
@@ -59,5 +63,11 @@
     }
     .news-title {
         font-size: 24px;
+    }
+    .news-text {
+        font-size: 20px;
+    }
+    .news-text_highlight {
+        font-size: 22px;
     }
 }

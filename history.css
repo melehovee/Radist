@@ -24,7 +24,7 @@
   background-image: url("images/history/block-bg.png");
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 400px;
+  margin-bottom: 28px;
 }
 .text {
   font-family: "Caveat";
@@ -53,10 +53,12 @@ th {
   }
   .history-title {
     font-size: 22px;
-    margin-bottom: 20px;
   }
   .parallax {
     height: 30vh;
     background-attachment: unset;
+  }
+  td {
+    padding: 5px;
   }
 }
